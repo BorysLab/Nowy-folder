@@ -11,8 +11,25 @@ h1 {
 }
 
 
-h2 {
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+
+    50% {
+      color: red;
+    }
+
+    100% {
+      color: blue;
+    }
+  }
+
+
+
+h2:hover {
     color: #eb34ab;
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: color-change 3s infinite;
 }
